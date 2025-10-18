@@ -212,7 +212,7 @@ def activateUserAccount(user_id):
 
 @app.route('/user-accounts/search')
 @require_user_admin
-def search_user_accounts():
+def searchUserAccount():
     """Search user accounts"""
     keyword = request.args.get('keyword', '')
     profile_id = request.args.get('profile_id', '')
@@ -227,7 +227,7 @@ def search_user_accounts():
         is_active = False
     
     # Search
-    success, message, users = account_controller.search_user_accounts(
+    success, message, users = account_controller.searchUserAccount(
         keyword if keyword else None,
         profile_id,
         is_active

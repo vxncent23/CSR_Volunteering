@@ -113,7 +113,7 @@ class UserAccountController:
         except Exception as e:
             return (False, f"Error retrieving user account: {str(e)}", None)
     
-    def search_user_accounts(self, keyword=None, profile_id=None, is_active=None):
+    def searchUserAccount(self, keyword=None, profile_id=None, is_active=None):
         """
         User Story 7: As a User Admin, I want to search for a user
         

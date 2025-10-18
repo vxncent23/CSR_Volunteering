@@ -213,9 +213,9 @@ User Admin          UserAdminBoundary      UserAccountController    UserAccount 
 
 ```
 1. User selects "Search User Accounts"
-   └─> UserAdminBoundary.handle_search_user_accounts()
+   └─> UserAdminBoundary.handle_searchUserAccount()
        ├─> Collect search criteria (keyword, profile, status)
-       └─> UserAccountController.search_user_accounts(...)
+       └─> UserAccountController.searchUserAccount(...)
            ├─> Build query with filters
            │   ├─> Keyword: LIKE search on username/email/name
            │   ├─> Profile: Filter by user_profile_id

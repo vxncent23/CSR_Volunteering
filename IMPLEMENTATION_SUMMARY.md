@@ -63,7 +63,7 @@ All 12 User Admin user stories have been fully implemented in Python using SQLAl
 | 4 | View User Account | ✅ Complete | `UserAccountController.view_user_account()` |
 | 5 | Update User Account | ✅ Complete | `UserAccountController.update_user_account()` |
 | 6 | Suspend User Account | ✅ Complete | `UserAccountController.suspend_user_account()` |
-| 7 | Search User Accounts | ✅ Complete | `UserAccountController.search_user_accounts()` |
+| 7 | Search User Accounts | ✅ Complete | `UserAccountController.searchUserAccount()` |
 
 ### User Profile Management (5/5)
 | # | User Story | Status | Implementation |

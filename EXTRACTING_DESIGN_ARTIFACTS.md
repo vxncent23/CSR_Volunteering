@@ -149,7 +149,7 @@ Alternative Flows:
 │ + view_user_account()     │
 │ + update_user_account()   │
 │ + suspend_user_account()  │
-│ + search_user_accounts()  │
+│ + searchUserAccount()  │
 └───────────────────────────┘
 
 ┌───────────────────────────┐
@@ -341,7 +341,7 @@ Sequence:
 │ + update_user_account(...): (bool, str, UserAccount)│
 │ + suspend_user_account(user_id: int): (bool, str)  │
 │ + activate_user_account(user_id: int): (bool, str) │
-│ + search_user_accounts(...): (bool, str, list)     │
+│ + searchUserAccount(...): (bool, str, list)     │
 │ + get_all_user_accounts(): list                    │
 └────────────────────────────────────────────────────┘
 
@@ -383,7 +383,7 @@ Sequence:
 │ + handle_view_user_account(): void                 │
 │ + handle_update_user_account(): void               │
 │ + handle_suspend_activate_user_account(): void     │
-│ + handle_search_user_accounts(): void              │
+│ + handle_searchUserAccount(): void              │
 │ + handle_list_all_user_accounts(): void            │
 │ + handle_create_user_profile(): void               │
 │ + handle_view_user_profile(): void                 │

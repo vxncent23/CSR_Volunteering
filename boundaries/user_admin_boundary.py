@@ -74,7 +74,7 @@ class UserAdminBoundary:
             elif choice == "6":
                 self.handle_suspend_activate_user_account()
             elif choice == "7":
-                self.handle_search_user_accounts()
+                self.handle_searchUserAccount()
             elif choice == "8":
                 self.handle_list_all_user_accounts()
             elif choice == "9":
@@ -261,7 +261,7 @@ class UserAdminBoundary:
         else:
             print(f"\n✗ {message}")
     
-    def handle_search_user_accounts(self):
+    def handle_searchUserAccount(self):
         """Handle searching for user accounts"""
         print("\n--- SEARCH USER ACCOUNTS ---")
         
@@ -287,7 +287,7 @@ class UserAdminBoundary:
             is_active = None
         
         # Search
-        success, message, users = self.account_controller.search_user_accounts(
+        success, message, users = self.account_controller.searchUserAccount(
             keyword, profile_id, is_active
         )
         

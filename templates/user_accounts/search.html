@@ -15,7 +15,7 @@
 </div>
 
 <div class="search-container">
-    <form method="GET" action="{{ url_for('search_user_accounts') }}" class="search-form">
+    <form method="GET" action="{{ url_for('searchUserAccount') }}" class="search-form">
         <div class="form-row">
             <div class="form-group">
                 <label for="keyword">Keyword</label>
@@ -53,7 +53,7 @@
                 </svg>
                 Search
             </button>
-            <a href="{{ url_for('search_user_accounts') }}" class="btn btn-secondary">Clear</a>
+            <a href="{{ url_for('searchUserAccount') }}" class="btn btn-secondary">Clear</a>
         </div>
     </form>
 </div>
