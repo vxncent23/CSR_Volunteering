@@ -261,7 +261,7 @@ class UserAdminBoundary:
         else:
             print(f"\n✗ {message}")
     
-    def handle_searchUserAccount(self):
+    def handle_search_user_accounts(self):
         """Handle searching for user accounts"""
         print("\n--- SEARCH USER ACCOUNTS ---")
         

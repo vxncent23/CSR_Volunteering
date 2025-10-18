@@ -10,6 +10,7 @@ from controllers.user_account_controller import UserAccountController
 from controllers.user_profile_controller import UserProfileController
 from controllers.updateUserAccountCtrl import UpdateUserAccountCtrl
 from controllers.suspendUserAccountCtrl import SuspendUserAccountCtrl
+from controllers.searchUserAccountController import SearchUserAccountController
 import os
 
 # Initialize Flask app
@@ -22,6 +23,7 @@ account_controller = UserAccountController()
 profile_controller = UserProfileController()
 updateUserAccountCtrl = UpdateUserAccountCtrl()
 suspendUserAccountCtrl = SuspendUserAccountCtrl()
+searchUserAccountController = SearchUserAccountController()
 
 
 # ==================== HELPER FUNCTIONS ====================
@@ -227,7 +229,7 @@ def searchUserAccount():
         is_active = False
     
     # Search
-    success, message, users = account_controller.searchUserAccount(
+    success, message, users = searchUserAccountController.searchUserAccount(
         keyword if keyword else None,
         profile_id,
         is_active
