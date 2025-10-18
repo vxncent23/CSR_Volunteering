@@ -7,6 +7,7 @@ Handles all user interactions and displays (CLI-based for now)
 from controllers.authentication_controller import AuthenticationController
 from controllers.user_account_controller import UserAccountController
 from controllers.user_profile_controller import UserProfileController
+from controllers.searchUserProfileController import SearchUserProfileController
 
 
 class UserAdminBoundary:
@@ -21,6 +22,7 @@ class UserAdminBoundary:
         self.auth_controller = AuthenticationController()
         self.account_controller = UserAccountController()
         self.profile_controller = UserProfileController()
+        self.search_controller = SearchUserProfileController()
     
     def display_menu(self):
         """Display the main menu for User Admin"""
@@ -424,7 +426,7 @@ class UserAdminBoundary:
         else:
             is_active = None
         
-        success, message, profiles = self.profile_controller.search_user_profiles(
+        success, message, profiles = self.search_controller.search_user_profiles(
             keyword, is_active
         )
         
